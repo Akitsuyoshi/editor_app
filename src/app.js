@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/health', (req, res) => {
-    res.status(200).send()
+    res.status(200).send("Successfully reached to health end point")
 })
 
 app.post('/echo_user_input', (req, res) => {
