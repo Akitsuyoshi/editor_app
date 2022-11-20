@@ -17,3 +17,7 @@ app.post('/echo_user_input', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+app.use((req, res, _) => {
+    res.status(404).send("Sorry can't find the page: " + req.originalUrl)
+})
